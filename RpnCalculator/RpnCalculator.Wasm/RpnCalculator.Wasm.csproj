@@ -37,7 +37,7 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Filter" Version="1.1.1" />
     <PackageReference Include="Uno.UI" Version="1.46.226-dev.2657" />
     <PackageReference Include="Uno.Wasm.Bootstrap" Version="1.0.0-dev.300" />
-    <PackageReference Include="Uno.Xamarin.Forms.Platform" Version="4.1.0-uno.73" />
+    <PackageReference Include="Uno.Xamarin.Forms.Platform" Version="4.1.0-uno.80" />
     <DotNetCliToolReference Include="Uno.Wasm.Bootstrap.Cli" Version="1.0.0-dev.300" />
   </ItemGroup>
   <ItemGroup>
