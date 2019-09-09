@@ -1,13 +1,13 @@
 resources:
   containers:
   - container: nv-wasm
-    image: nventive/wasm-build:1.2
+    image: nventive/wasm-build:1.5
 
 jobs:
 - template: .vsts-win-build.yml
   parameters:
     name: Windows
     pool:
-      vmImage: 'vs2017-win2016'
+      vmImage: 'windows-2019'
 
 - template: .vsts-linux-build.yml
