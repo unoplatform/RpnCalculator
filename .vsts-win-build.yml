@@ -1,0 +1,59 @@
+parameters:
+  pool: ''
+  sign: false
+
+jobs:
+- job: Windows
+  pool: ${{ parameters.pool }}
+
+  variables:
+    ANDROID_NDK_HOME: C:\Microsoft\AndroidNDK64\android-ndk-r15c
+    ANDROID_NDK_PATH: C:\Microsoft\AndroidNDK64\android-ndk-r15c
+    AndroidNdkDirectory: C:\Microsoft\AndroidNDK64\android-ndk-r15c
+
+  steps:
+  - checkout: self
+    clean: true
+    
+  - task: GitVersion@4
+    # Ignore gitversion for forks, until this is fixed:
+    # https://developercommunity.visualstudio.com/content/problem/284991/public-vsts-previouw-cant-set-build-number-of-pr-b.html
+    condition: eq(variables['System.PullRequest.IsFork'], 'False')
+    inputs:
+      updateAssemblyInfo: false
+
+  - task: NuGetToolInstaller@0
+    inputs:
+      versionSpec: 4.7.0
+      checkLatest: false
+
+  - task: MSBuild@1
+    inputs:
+      solution: $(build.sourcesdirectory)/RpnCalculator.sln
+      msbuildLocationMethod: version
+      msbuildVersion: latest
+      msbuildArchitecture: x86
+      msbuildArguments: /r /p:Configuration=Release /detailedsummary "/p:PackageVersion=%GITVERSION_FullSemVer%" "/p:InformationalVersion=%GITVERSION_InformationalVersion%" # /bl:$(build.artifactstagingdirectory)\build.binlog
+      clean: false
+      maximumCpuCount: true
+      restoreNugetPackages: false
+      logProjectEvents: false
+      createLogFile: false
+
+  - task: CopyFiles@2
+    displayName: 'Publish Wasm Binaries'
+    inputs:
+      SourceFolder: $(build.sourcesdirectory)/RpnCalculator/RpnCalculator.Wasm/bin/Release/netstandard2.0/dist
+      Contents: '**/*.*'
+      TargetFolder: $(build.artifactstagingdirectory)/RpnCalculator-interp-wasm
+      CleanTargetFolder: false
+      OverWrite: false
+      flattenFolders: false
+
+  - task: PublishBuildArtifacts@1
+    # https://developercommunity.visualstudio.com/content/problem/284991/public-vsts-previouw-cant-set-build-number-of-pr-b.html
+    condition: eq(variables['System.PullRequest.IsFork'], 'False')
+    inputs:
+      PathtoPublish: $(build.artifactstagingdirectory)
+      ArtifactName: RpnCalculator-drop
+      ArtifactType: Container
