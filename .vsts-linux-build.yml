@@ -28,7 +28,7 @@ jobs:
 
   - script: |
       source /emsdk/emsdk_env.sh
-      msbuild /r /p:Configuration=Release "/p:PackageVersion=$(GITVERSION_FullSemVer)" $(build.sourcesdirectory)/RpnCalculator/RpnCalculator.Wasm.csproj
+      msbuild /r /p:Configuration=Release "/p:PackageVersion=$(GITVERSION_FullSemVer)" $(build.sourcesdirectory)/RpnCalculator/RpnCalculator.Wasm/RpnCalculator.Wasm.csproj
 
     env:
       GITVERSION_FullSemVer: $(GITVERSION_FullSemVer)
