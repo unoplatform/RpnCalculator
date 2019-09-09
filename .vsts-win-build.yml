@@ -29,7 +29,7 @@ jobs:
 
   - task: MSBuild@1
     inputs:
-      solution: $(build.sourcesdirectory)/RpnCalculator/RpnCalculator.Wasm.csproj
+      solution: $(build.sourcesdirectory)/RpnCalculator/RpnCalculator.Wasm/RpnCalculator.Wasm.csproj
       msbuildLocationMethod: version
       msbuildVersion: latest
       msbuildArchitecture: x86
