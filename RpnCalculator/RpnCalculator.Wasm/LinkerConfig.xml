@@ -1,5 +1,6 @@
 ﻿<linker>
   <assembly fullname="RpnCalculator.Wasm" />
+  <assembly fullname="RpnCalculator" />
   <assembly fullname="Uno.UI" />
   <assembly fullname="Xamarin.Forms.Platform.Uno" />
 
