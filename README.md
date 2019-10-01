@@ -24,9 +24,9 @@ press the following keys:
 
 The + operation adds 3 and 4, the times operation multiplies 5 and that result, and the minus operation subtracts 2 from that result.
 
-The layout of the keys appears twice in the **MainPage.xaml** file, separately for portrait mode and landscape mode. The **MainPage.xaml.cs** code-behind file switches between these two layouts based on the relative width and height of the page.
+The layout of the keys appears twice in the **[MainPage.xaml](RpnCalculator/RpnCalculator/MainPage.xaml)** file, separately for portrait mode and landscape mode. The **[MainPage.xaml.cs](RpnCalculator/RpnCalculator/MainPage.xaml.cs)** code-behind file switches between these two layouts based on the relative width and height of the page.
 
-The calculator logic is encapsulated in the **RpnCalculatorViewModel.cs** file. The XAML file and the ViewModel are linked through XAML-based data bindings, which are described in detail in the series of series of articles on [**Data Binding**](https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/data-binding/), and particularly the [**The Command Interface**](https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/data-binding/commanding) article.
+The calculator logic is encapsulated in the **[RpnCalculatorViewModel.cs](RpnCalculator/RpnCalculator/RpnCalculatorViewModel.cs)** file. The XAML file and the ViewModel are linked through XAML-based data bindings, which are described in detail in the series of series of articles on [**Data Binding**](https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/data-binding/), and particularly the [**The Command Interface**](https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/data-binding/commanding) article.
 
 ![RPN Calculator application screenshot](Screenshots/01Portrait.a.png "RPN Calculator application screenshot")
 
