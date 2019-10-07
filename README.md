@@ -20,9 +20,9 @@ To perform the calculation
 
 press the following keys:
 
-5 ENTER 3 ENTER 4 ENTER + &#x00D7; 2 ENTER &#x2013;
+5 ENTER 3 ENTER 4 + &#x00D7; 2 &#x2013;
 
-The + operation adds 3 and 4, the times operation multiplies 5 and that result, and the minus operation subtracts 2 from that result.
+The + (addition) operation adds 3 and 4, the x (times) operation multiplies 5 with the result, and the - (minus) operation subtracts 2 from that result.
 
 The layout of the keys appears twice in the **MainPage.xaml** file, separately for portrait mode and landscape mode. The **MainPage.xaml.cs** code-behind file switches between these two layouts based on the relative width and height of the page.
 
