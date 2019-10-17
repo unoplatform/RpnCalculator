@@ -6,7 +6,7 @@ repository:
   # The name of the repository. Changing this will rename the repository
   #name: template
 
-  description: The Xamarin.Forms RPN (Reverse Polish Notation) calculator running in #WebAssembly
+  description: The Xamarin.Forms RPN (Reverse Polish Notation) calculator running in WebAssembly
   homepage: https://rpncalculator-wasm.azurewebsites.net/
   topics: xamarin-forms, sample, webassembly, wasm, uno, uno-platform, mono, xamarin, csharp, first-timers-friendly
 
