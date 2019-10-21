@@ -1,6 +1,6 @@
 ---
 name: Xamarin.Forms - RPN Calculator
-description: An RPN (Reverse Polish Notation) calculator allows numbers and operations to be entered without parentheses or an equal key. RPN (also called...
+description: An RPN (Reverse Polish Notation) calculator allows numbers and operations to be entered without parenthesis or an equal key. RPN (also called...
 page_type: sample
 languages:
 - csharp
@@ -10,7 +10,7 @@ urlFragment: rpncalculator
 ---
 # RPN Calculator
 
-An RPN (Reverse Polish Notation) calculator allows numbers and operations to be entered without parentheses or an equal key. RPN (also called postfix notation) is described in the Wikipedia article [**Reverse Polish notation**](https://en.wikipedia.org/wiki/Reverse_Polish_notation) and the [**RPN Calculator**](https://github.com/xamarin/Workbooks/blob/master/xamarin-forms/advanced/RPNCalculator/RpnCalculator-ios.workbook) workbook, which shows an alternative approach to coding an RPN calculator for Xamarin.Forms.
+An RPN (Reverse Polish Notation) calculator allows numbers and operations to be entered without parenthesis or an equal key. RPN (also called postfix notation) is described in the Wikipedia article [**Reverse Polish notation**](https://en.wikipedia.org/wiki/Reverse_Polish_notation) and the [**RPN Calculator**](https://github.com/xamarin/Workbooks/blob/master/xamarin-forms/advanced/RPNCalculator/RpnCalculator-ios.workbook) workbook, which shows an alternative approach to coding an RPN calculator for Xamarin.Forms.
 
 RPN is based on a stack. Numbers are pushed on the stack by pressing the ENTER key. Unary operations (such as **log** and **sin**) pop a number from the stack, apply the operation, and push the result back on the stack. Binary operations (such as **+** and **/**) pop two numbers from the stack, perform the operation, and push the result on the stack.
 
