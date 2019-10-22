@@ -15,7 +15,7 @@
 
   <Properties>
     <DisplayName>RpnCalculator.UWP</DisplayName>
-    <PublisherDisplayName>User</PublisherDisplayName>
+    <PublisherDisplayName>User2</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
