@@ -26,7 +26,7 @@
     <PackageReference Include="Uno.UI" Version="2.0.530" />
     <PackageReference Include="Uno.Wasm.Bootstrap" Version="1.0.10" />
     <PackageReference Include="Uno.Xamarin.Forms.Platform" Version="4.3.4" />
-    <DotNetCliToolReference Include="Uno.Wasm.Bootstrap.Cli" Version="1.0.0-dev.300" />
+    <DotNetCliToolReference Include="Uno.Wasm.Bootstrap.Cli" Version="1.0.10" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RpnCalculator\RpnCalculator.csproj" />
