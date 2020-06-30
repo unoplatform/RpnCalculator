@@ -13,10 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RpnCalculator.iOS", "RpnCal
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RpnCalculator.Uwp.Shared", "RpnCalculator\RpnCalculator.UWP\RpnCalculator.Uwp.Shared.shproj", "{D511FA0B-8EFD-4E0C-B84F-910558B282DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RpnCalculator.Wasm", "RpnCalculator\RpnCalculator.Wasm\RpnCalculator.Wasm.csproj", "{1EC5438F-07D3-4F1F-A5E5-358810E70695}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RpnCalculator.Wasm", "RpnCalculator\RpnCalculator.Wasm\RpnCalculator.Wasm.csproj", "{1EC5438F-07D3-4F1F-A5E5-358810E70695}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		RpnCalculator\RpnCalculator.UWP\RpnCalculator.Uwp.Shared.projitems*{1ec5438f-07d3-4f1f-a5e5-358810e70695}*SharedItemsImports = 5
 		RpnCalculator\RpnCalculator.UWP\RpnCalculator.Uwp.Shared.projitems*{d511fa0b-8efd-4e0c-b84f-910558b282da}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
